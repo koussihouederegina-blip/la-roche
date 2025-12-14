@@ -61,21 +61,28 @@ export default function Activities() {
           Des solutions complètes pour tous vos besoins en construction et rénovation
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {activities.map((activity, index) => {
             const Icon = activity.icon;
             return (
               <div
                 key={index}
-                className="group bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 p-6 border border-gray-100 hover:border-[#9B8E57] animate-slide-in"
+                className="group bg-white rounded-xl shadow-[0_10px_20px_rgba(228,25,34,0.2)] 
+                           hover:shadow-[0_20px_40px_rgba(228,25,34,0.3)] 
+                           transition-all duration-300 p-6 border border-[#E41922] 
+                           transform hover:-translate-y-2 hover:scale-105 animate-slide-in"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-[#9B8E57] to-[#96121D] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <div className="flex-shrink-0 w-16 h-16 bg-[#E41922] rounded-xl 
+                                  flex items-center justify-center 
+                                  shadow-[0_5px_15px_rgba(228,25,34,0.3)] 
+                                  group-hover:shadow-[0_8px_25px_rgba(228,25,34,0.4)] 
+                                  group-hover:scale-110 transition-transform duration-300">
                     <Icon size={28} className="text-white" strokeWidth={2} />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-[#96121D] transition-colors">
+                    <h3 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-[#E41922] transition-colors">
                       {activity.title}
                     </h3>
                     <p className="text-gray-600 text-sm leading-relaxed">
