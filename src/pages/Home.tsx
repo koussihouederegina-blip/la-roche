@@ -1,5 +1,4 @@
 import React from 'react';
-import { Building2 } from 'lucide-react';
 
 /* ============================
    Bouton 3D (intégré)
@@ -52,7 +51,7 @@ export default function Home({ onNext }: HomeProps) {
   return (
     <div className="w-full min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-8 relative overflow-hidden">
       
-      {/* Effets de lumière */}
+      {/* Effets lumineux */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-64 h-64 bg-[#E41922] rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-20 w-64 h-64 bg-[#E41922] rounded-full blur-3xl"></div>
@@ -60,12 +59,19 @@ export default function Home({ onNext }: HomeProps) {
 
       <div className="relative z-10 text-center space-y-10">
         
-        {/* Icône */}
+        {/* LOGO RÉEL */}
         <div className="flex justify-center">
-          <Building2 size={80} className="text-[#E41922]" strokeWidth={1.5} />
+          <img
+            src="https://i.ibb.co/Ldqmm0gJ/e4e6822b-91fc-4102-be39-6df4c8058eb0.jpg"
+            alt="Logo La Roche Bénin"
+            className="
+              w-32 md:w-36 h-auto
+              drop-shadow-[0_10px_25px_rgba(228,25,34,0.35)]
+            "
+          />
         </div>
 
-        {/* Titre */}
+        {/* TITRE */}
         <div className="space-y-4">
           <h1 className="text-6xl font-bold text-gray-800 tracking-tight">
             LA ROCHE <span className="text-[#E41922]">BÉNIN</span>
@@ -73,19 +79,19 @@ export default function Home({ onNext }: HomeProps) {
           <div className="h-1 w-32 bg-[#E41922] mx-auto rounded-full"></div>
         </div>
 
-        {/* Description */}
+        {/* DESCRIPTION */}
         <p className="text-2xl text-gray-600 font-light max-w-2xl mx-auto leading-relaxed">
           Votre partenaire de confiance pour tous vos projets de construction et de rénovation
         </p>
 
-        {/* Bouton */}
+        {/* BOUTON */}
         <div className="pt-6">
           <Button3D onClick={onNext} size="lg">
             Découvrir notre entreprise
           </Button3D>
         </div>
 
-        {/* Footer */}
+        {/* FOOTER */}
         <div className="pt-10 text-sm text-gray-500">
           <p>Matériaux de construction • Équipements • Solutions complètes</p>
         </div>
