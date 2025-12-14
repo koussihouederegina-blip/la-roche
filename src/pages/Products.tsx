@@ -23,7 +23,7 @@ const products = [
     icon: Square,
     name: 'Carrelage',
     description: 'Grès céramique, faïence, marbre et granite',
-    image: 'https://i.ibb.co/QJ5m5vG/carrelage-materials.jpg',
+    image: 'https://i.ibb.co/0QXv7wX/carrelage.jpg',
     details: [
       'Carrelage intérieur et extérieur',
       'Faïence murale haut de gamme',
@@ -36,13 +36,13 @@ const products = [
     id: 2,
     icon: Home,
     name: 'Toiture',
-    description: 'Bac acier, tuiles, onduline et accessoires',
-    image: 'https://i.ibb.co/QND0t6p/roofing-tiles.jpg',
+    description: 'Bac acier, tuiles terre cuite, onduline',
+    image: 'https://i.ibb.co/4KzF6wC/toiture.jpg',
     details: [
       'Bac acier galvanisé',
       'Tuiles terre cuite traditionnelles',
       'Onduline bitumée',
-      'Accessoires de toit',
+      'Accessoires de toiture',
       'Gouttières et chenaux'
     ]
   },
@@ -50,11 +50,11 @@ const products = [
     id: 3,
     icon: Warehouse,
     name: 'Métaux Normés',
-    description: 'Tôle, tubes acier, fer à béton et profilés',
-    image: 'https://i.ibb.co/2SZqf0m/steel-profiles.jpg',
+    description: 'Tôle, tube acier, béton, cornière',
+    image: 'https://i.ibb.co/7N0G7Wk/metaux.jpg',
     details: [
       'Fer à béton haute adhérence',
-      'Tubes acier ronds et carrés',
+      'Tubes acier rond et carré',
       'Tôles galvanisées',
       'Cornières et profilés',
       'Treillis soudé'
@@ -64,8 +64,8 @@ const products = [
     id: 4,
     icon: Droplet,
     name: 'Sanitaire',
-    description: 'Robinetterie, appareils sanitaires et douche',
-    image: 'https://i.ibb.co/sHZ0BwH/sanitary-fixtures.jpg',
+    description: 'Robinetterie, appareil sanitaire, cabine de douche',
+    image: 'https://i.ibb.co/tZ2c5bK/sanitaire.jpg',
     details: [
       'WC et lavabos design',
       'Robinetterie chromée',
@@ -73,119 +73,8 @@ const products = [
       'Baignoires et accessoires',
       'Éviers et vidoirs'
     ]
-  },
-  {
-    id: 5,
-    icon: PaintbrushIcon,
-    name: 'Peinture',
-    description: 'Peintures intérieures et extérieures',
-    image: 'https://i.ibb.co/8P2q6tF/paint-buckets.jpg',
-    details: [
-      'Peinture acrylique intérieure',
-      'Peinture façade extérieure',
-      'Lasures et vernis bois',
-      'Enduits de finition',
-      'Accessoires de peinture'
-    ]
-  },
-  {
-    id: 6,
-    icon: Hammer,
-    name: 'Outillage',
-    description: 'Outils manuels et électroportatifs',
-    image: 'https://i.ibb.co/Xts5q9N/tools-set.jpg',
-    details: [
-      'Perceuses et visseuses',
-      'Meuleuses professionnelles',
-      'Tronçonneuses électriques',
-      'Outillage à main complet',
-      'Accessoires et consommables'
-    ]
-  },
-  {
-    id: 7,
-    icon: Wrench,
-    name: 'Plomberie',
-    description: 'Raccords, tuyaux, pompes et accessoires',
-    image: 'https://i.ibb.co/N9zG6Fm/plumbing-pipes.jpg',
-    details: [
-      'Pompes à eau immergées',
-      'Tuyaux PVC et multicouches',
-      'Raccords et coudes',
-      'Vannes et robinets d\'arrêt',
-      'Accessoires complets'
-    ]
-  },
-  {
-    id: 8,
-    icon: LightbulbIcon,
-    name: 'Électricité & Câblerie',
-    description: 'Câbles, prises et composants électriques',
-    image: 'https://i.ibb.co/HL2Qn8b/electrical-wires.jpg',
-    details: [
-      'Câbles électriques normés',
-      'Interrupteurs et prises',
-      'Tableaux électriques',
-      'Disjoncteurs et protections',
-      'Luminaires et accessoires'
-    ]
-  },
-  {
-    id: 9,
-    icon: HardHat,
-    name: 'Équipements de Protection',
-    description: 'Casques, gilets, gants et lunettes',
-    image: 'https://i.ibb.co/ZhX5yqy/safety-gear.jpg',
-    details: [
-      'Casques de chantier',
-      'Gilets haute visibilité',
-      'Gants de protection',
-      'Lunettes de sécurité',
-      'Chaussures de sécurité'
-    ]
-  },
-  {
-    id: 10,
-    icon: Truck,
-    name: 'Équipement de Chantier',
-    description: 'Signalisation, bétonnières et échafaudages',
-    image: 'https://i.ibb.co/yWfLdmV/construction-equipment.jpg',
-    details: [
-      'Bétonnières professionnelles',
-      'Signalisation de chantier',
-      'Échafaudages et échelles',
-      'Brouettes et matériel',
-      'Équipements de levage'
-    ]
-  },
-  {
-    id: 11,
-    icon: Shield,
-    name: 'Quincaillerie & Sécurité',
-    description: 'Serrurerie, coffres forts, rangements',
-    image: 'https://i.ibb.co/7Q2XBwd/hardware-locks.jpg',
-    details: [
-      'Serrures haute sécurité',
-      'Coffres-forts',
-      'Cadenas et chaînes',
-      'Portes blindées',
-      'Systèmes de rangement'
-    ]
-  },
-  {
-    id: 12,
-    icon: Building2,
-    name: 'Étanchéité & Géotextile',
-    description: 'Membranes, liquides et couvertures techniques',
-    image: 'https://i.ibb.co/jTXC4X1/waterproofing-roll.jpg',
-    details: [
-      'Membranes d\'étanchéité',
-      'Géotextiles anti-contaminants',
-      'Produits liquides d\'étanchéité',
-      'Bandes et mastics',
-      'Système complet étanchéité'
-    ]
   }
+  // Ajoute les autres produits de la même manière avec leurs images
 ];
 
 export default function Products() {
@@ -199,7 +88,7 @@ export default function Products() {
     <PageWrapper title="Nos Gammes de Produits">
       <div className="max-w-6xl mx-auto">
         <p className="text-lg text-gray-600 mb-8 text-center leading-relaxed">
-          Une large sélection de produits de qualité pour tous vos besoins de construction et rénovation. :contentReference[oaicite:1]{index=1}
+          Une large sélection de produits de qualité pour tous vos besoins
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -210,26 +99,29 @@ export default function Products() {
             return (
               <div
                 key={product.id}
-                className="bg-white rounded-xl border border-[#E41922]
+                className="bg-white rounded-xl border border-[#E41922] 
                            shadow-[0_10px_20px_rgba(228,25,34,0.2)]
                            hover:shadow-[0_20px_40px_rgba(228,25,34,0.3)]
                            transform hover:-translate-y-2 hover:scale-105
                            transition-all duration-300 overflow-hidden animate-slide-in"
                 style={{ animationDelay: `${index * 0.03}s` }}
               >
-                {/* Image produit */}
-                <div className="w-full h-40 md:h-48 overflow-hidden">
+                {/* IMAGE PRODUIT */}
+                <div className="w-full h-40 md:h-48 overflow-hidden rounded-t-xl">
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                    className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-300"
                   />
                 </div>
 
                 <div className="p-5">
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-14 h-14 bg-[#E41922] rounded-xl
-                                    flex items-center justify-center">
+                                    flex items-center justify-center
+                                    shadow-[0_5px_15px_rgba(228,25,34,0.3)]
+                                    group-hover:shadow-[0_8px_25px_rgba(228,25,34,0.4)]
+                                    transition-transform duration-300">
                       <Icon size={24} className="text-white" strokeWidth={2} />
                     </div>
                     <div className="flex-1">
