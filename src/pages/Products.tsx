@@ -10,8 +10,8 @@ import {
   Shield,
   Truck,
   HardHat,
-  LightbulbIcon,
-  PaintbrushIcon,
+  Lightbulb,
+  Paintbrush,
   Building2,
   ChevronDown,
   ChevronUp
@@ -76,7 +76,7 @@ const products = [
   },
   {
     id: 5,
-    icon: PaintbrushIcon,
+    icon: Paintbrush,
     name: 'Peinture',
     description: 'Peintures intérieures et extérieures',
     image: 'https://i.ibb.co/8P2q6tF/paint-buckets.jpg',
@@ -118,7 +118,7 @@ const products = [
   },
   {
     id: 8,
-    icon: LightbulbIcon,
+    icon: Lightbulb,
     name: 'Électricité & Câblerie',
     description: 'Câbles, prises et composants électriques',
     image: 'https://i.ibb.co/HL2Qn8b/electrical-wires.jpg',
@@ -197,12 +197,12 @@ export default function Products() {
 
   return (
     <PageWrapper title="Nos Gammes de Produits">
-      <div className="max-w-6xl mx-auto">
-        <p className="text-lg text-gray-600 mb-8 text-center leading-relaxed">
-          Une large sélection de produits de qualité pour tous vos besoins de construction et rénovation. :contentReference[oaicite:1]{index=1}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p className="text-base sm:text-lg text-gray-600 mb-8 text-center leading-relaxed">
+          Une large sélection de produits de qualité pour tous vos besoins de construction et rénovation.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {products.map((product, index) => {
             const Icon = product.icon;
             const isExpanded = expandedId === product.id;
@@ -211,14 +211,14 @@ export default function Products() {
               <div
                 key={product.id}
                 className="bg-white rounded-xl border border-[#E41922]
-                           shadow-[0_10px_20px_rgba(228,25,34,0.2)]
-                           hover:shadow-[0_20px_40px_rgba(228,25,34,0.3)]
-                           transform hover:-translate-y-2 hover:scale-105
+                           shadow-[0_8px_16px_rgba(228,25,34,0.15)]
+                           hover:shadow-[0_12px_24px_rgba(228,25,34,0.25)]
+                           transform hover:-translate-y-1 hover:scale-105
                            transition-all duration-300 overflow-hidden animate-slide-in"
                 style={{ animationDelay: `${index * 0.03}s` }}
               >
                 {/* Image produit */}
-                <div className="w-full h-40 md:h-48 overflow-hidden">
+                <div className="w-full h-40 sm:h-48 md:h-56 overflow-hidden">
                   <img
                     src={product.image}
                     alt={product.name}
@@ -226,35 +226,35 @@ export default function Products() {
                   />
                 </div>
 
-                <div className="p-5">
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-14 h-14 bg-[#E41922] rounded-xl
+                <div className="p-4 sm:p-5">
+                  <div className="flex items-start gap-3 sm:gap-4">
+                    <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 bg-[#E41922] rounded-xl
                                     flex items-center justify-center">
-                      <Icon size={24} className="text-white" strokeWidth={2} />
+                      <Icon size={20} className="text-white" strokeWidth={2} />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-lg font-bold text-gray-800 mb-1">
+                      <h3 className="text-md sm:text-lg font-bold text-gray-800 mb-1">
                         {product.name}
                       </h3>
-                      <p className="text-sm text-gray-600">{product.description}</p>
+                      <p className="text-sm sm:text-base text-gray-600">{product.description}</p>
                     </div>
                   </div>
 
                   <button
                     onClick={() => toggleExpand(product.id)}
-                    className="mt-4 w-full flex items-center justify-between px-4 py-2
+                    className="mt-3 sm:mt-4 w-full flex items-center justify-between px-3 sm:px-4 py-2
                                bg-[#E41922]/10 hover:bg-[#E41922] hover:text-white
-                               rounded-lg transition-colors duration-200 text-sm font-semibold"
+                               rounded-lg transition-colors duration-200 text-sm sm:text-base font-semibold"
                   >
                     <span>Voir détails</span>
                     {isExpanded ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
                   </button>
 
                   {isExpanded && (
-                    <div className="mt-4 pt-4 border-t border-[#E41922] animate-slide-in">
-                      <ul className="space-y-2">
+                    <div className="mt-3 sm:mt-4 pt-3 sm:pt-4 border-t border-[#E41922] animate-slide-in">
+                      <ul className="space-y-1 sm:space-y-2">
                         {product.details.map((detail, idx) => (
-                          <li key={idx} className="flex items-start gap-2 text-sm text-gray-700">
+                          <li key={idx} className="flex items-start gap-2 text-sm sm:text-base text-gray-700">
                             <span className="text-[#E41922] mt-1">•</span>
                             <span>{detail}</span>
                           </li>
